@@ -39,3 +39,18 @@ if "trip_distance" in staging_df.columns:
     staging_df.rename(columns={"trip_distance": "trip_distance_km"}, inplace=True)
     logging.info("Converted trip_distance to kilometers")
 
+# Calculate trip duration (lpep_pickup_datetime - lpep_dropoff_datetime)
+if "lpep_pickup_datetime" in staging_df.columns and "lpep_dropoff_datetime" in staging_df.columns:
+    staging_df["lpep_pickup_datetime"] = pd.to_datetime(staging_df["lpep_pickup_datetime"], errors="coerce")
+    staging_df["lpep_dropoff_datetime"] = pd.to_datetime(staging_df["lpep_dropoff_datetime"], errors="coerce")
+    staging_df["trip_duration"] = (staging_df["lpep_dropoff_datetime"] - staging_df["lpep_pickup_datetime"]).dt.total_seconds()
+    staging_df["trip_duration"] = staging_df["trip_duration"].fillna(0).astype(int)  
+    staging_df["trip_duration"] = staging_df["trip_duration"].apply(lambda x: f"{x // 60} min {x % 60} sec") 
+    logging.info("Calculated trip duration successfully.")
+
+# Save processed data
+staging_df.to_csv("result/processed_table.csv", index=False)
+logging.info("Processed table saved successfully in 'result/' folder.")
+print("Processed table created successfully in 'result/' folder.")
+
+logging.info("Script completed successfully.")
