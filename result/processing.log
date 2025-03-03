@@ -1,0 +1,6 @@
+2025-03-03 23:56:15 - INFO - Start..
+2025-03-03 23:56:16 - INFO - Normalized column names to snake_case.
+2025-03-03 23:59:42 - INFO - Start..
+2025-03-03 23:59:43 - INFO - Normalized column names to snake_case.
+2025-03-03 23:59:43 - INFO - Converted payment_type to mapping
+2025-03-03 23:59:43 - INFO - Converted trip_distance to kilometers
