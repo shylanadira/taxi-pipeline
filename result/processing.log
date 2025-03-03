@@ -4,3 +4,10 @@
 2025-03-03 23:59:43 - INFO - Normalized column names to snake_case.
 2025-03-03 23:59:43 - INFO - Converted payment_type to mapping
 2025-03-03 23:59:43 - INFO - Converted trip_distance to kilometers
+2025-03-04 00:29:28 - INFO - Start..
+2025-03-04 00:29:30 - INFO - Normalized column names to snake_case.
+2025-03-04 00:29:30 - INFO - Converted payment_type to mapping
+2025-03-04 00:29:30 - INFO - Converted trip_distance to kilometers
+2025-03-04 00:29:31 - INFO - Calculated trip duration successfully.
+2025-03-04 00:29:35 - INFO - Processed table saved successfully in 'result/' folder.
+2025-03-04 00:29:35 - INFO - Script completed successfully.
