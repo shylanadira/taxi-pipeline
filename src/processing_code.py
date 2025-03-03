@@ -50,6 +50,7 @@ if "lpep_pickup_datetime" in staging_df.columns and "lpep_dropoff_datetime" in s
 
 # Save processed data
 staging_df.to_csv("result/processed_table.csv", index=False)
+
 logging.info("Processed table saved successfully in 'result/' folder.")
 print("Processed table created successfully in 'result/' folder.")
 
