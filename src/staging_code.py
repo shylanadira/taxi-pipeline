@@ -3,8 +3,8 @@ import glob
 import os
 import logging
 # Setup logging
-log_filename = "src/staging.log"
-os.makedirs("src", exist_ok=True)
+log_filename = "staging/staging.log"
+os.makedirs("staging", exist_ok=True)
 logging.basicConfig(
     filename=log_filename, level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
