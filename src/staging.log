@@ -1,0 +1,9 @@
+2025-03-03 23:26:49 - INFO - Starting data extraction and staging process...
+2025-03-03 23:26:49 - INFO - Found 36 CSV files and 17 JSON files.
+2025-03-03 23:26:59 - INFO - Staging table created successfully in 'staging/' folder.
+2025-03-03 23:30:16 - INFO - Starting data extraction and staging process...
+2025-03-03 23:30:16 - INFO - Found 36 CSV files and 17 JSON files.
+2025-03-03 23:30:26 - INFO - Staging table created successfully in 'staging/' folder.
+2025-03-03 23:31:36 - INFO - Starting data extraction and staging process...
+2025-03-03 23:31:36 - INFO - Found 36 CSV files and 17 JSON files.
+2025-03-03 23:31:45 - INFO - Staging table created successfully in 'staging/' folder.
