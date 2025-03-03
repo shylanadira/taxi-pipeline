@@ -16,3 +16,6 @@ combined_csv_df = pd.concat(csv_dataframes, ignore_index=True) if csv_dataframes
 # Read JSON file
 json_dataframes = [pd.read_json(file, dtype=str) for file in json_files] if json_files else []
 combined_json_df = pd.concat(json_dataframes, ignore_index=True) if json_dataframes else pd.DataFrame()
+
+# Merge
+staging_df = pd.merge(combined_csv_df, combined_json_df, how="outer") if not combined_csv_df.empty else combined_json_df
