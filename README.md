@@ -30,7 +30,7 @@ This project is a **data pipeline** for processing taxi trip data, involving **e
   - Converts `trip_distance` from miles to kilometers.
   - Adds `trip_duration` using `lpep_pickup_datetime` & `lpep_dropoff_datetime`.
   - Saves processed data as **CSV**.
-- **Loading Process:** Saves final processed data to a CSV file.
+- **Loading Process:** Saves final processed data to a CSV file and makes Data Menu for table info.
 - **Logging:** Every step is logged for full traceability.
 ## 📊 Data Schema
 | Column                  | Description |
