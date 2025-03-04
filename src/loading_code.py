@@ -27,3 +27,32 @@ def display_menu():
     print("4. Find minimum trip distance")
     print("5. Count rows and columns")
     print("6. Exit")
+def main():
+    df = load_data()
+    if df is None:
+        return
+    
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1-6): ")
+        
+        if choice == "1":
+            print(df.head())
+        elif choice == "2":
+            print(df.describe())
+        elif choice == "3":
+            max_duration = df["trip_duration"].max()
+            print(f"Maximum trip duration: {max_duration}")
+        elif choice == "4":
+            max_distance = df["trip_distance_km"].max()
+            print(f"Maximum trip distance: {max_distance} km")
+        elif choice == "5":
+            print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
+        elif choice == "6":
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice, please enter a number between 1-6.")
+
+if __name__ == "__main__":
+    main()
