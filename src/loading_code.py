@@ -24,7 +24,7 @@ def display_menu():
     print("1. Show top rows of data")
     print("2. Show dataset summary")
     print("3. Find maximum trip duration")
-    print("4. Find minimum trip distance")
+    print("4. Find maximum trip distance")
     print("5. Count rows and columns")
     print("6. Exit")
 def main():

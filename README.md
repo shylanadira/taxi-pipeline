@@ -56,3 +56,14 @@ This project is a **data pipeline** for processing taxi trip data, involving **e
 | `trip_type`             | Trip type, regular trip or prearranged (pre-booked) trip |
 | `congestien_surcharge`  | Congestion surcharge applied to certain trips |
 | `trip_duration`         | Trip duration in minutes & seconds |
+
+## Menu
+
+**Taxi Data Analysis Menu:**
+1. Show top rows of data
+2. Show dataset summary
+3. Find maximum trip duration
+4. Find minimum trip distance
+5. Count rows and columns
+6. Exit
+Enter your choice (1-6):
