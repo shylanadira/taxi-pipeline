@@ -54,7 +54,8 @@ if "lpep_pickup_datetime" in staging_df.columns and "lpep_dropoff_datetime" in s
     staging_df["trip_duration"] = staging_df["trip_duration"].fillna(0).astype(int)  
     staging_df["trip_duration"] = staging_df["trip_duration"].apply(lambda x: f"{x // 60} min {x % 60} sec") 
     log_and_print("Calculated trip duration.")
-
+    
+staging_df.fillna("N/A", inplace=True)
 # Save processed data
 staging_df.to_csv("result/processed_table.csv", index=False)
 

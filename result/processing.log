@@ -44,3 +44,17 @@
 2025-03-04 12:32:41 - INFO - Calculated trip duration.
 2025-03-04 12:32:47 - INFO - Processed table saved successfully in 'result/' folder.
 2025-03-04 12:32:47 - INFO - Data processing completed successfully.
+2025-03-04 12:35:01 - INFO - Data processing started..
+2025-03-04 12:35:03 - INFO - Normalized column names to snake_case.
+2025-03-04 12:35:03 - INFO - Converted payment_type to lables.
+2025-03-04 12:35:03 - INFO - Converted trip_distance to kilometers.
+2025-03-04 12:35:04 - INFO - Calculated trip duration.
+2025-03-04 12:35:10 - INFO - Processed table saved successfully in 'result/' folder.
+2025-03-04 12:35:10 - INFO - Data processing completed successfully.
+2025-03-04 12:36:20 - INFO - Data processing started..
+2025-03-04 12:36:21 - INFO - Normalized column names to snake_case.
+2025-03-04 12:36:21 - INFO - Converted payment_type to lables.
+2025-03-04 12:36:21 - INFO - Converted trip_distance to kilometers.
+2025-03-04 12:36:22 - INFO - Calculated trip duration.
+2025-03-04 12:36:27 - INFO - Processed table saved successfully in 'result/' folder.
+2025-03-04 12:36:27 - INFO - Data processing completed successfully.
