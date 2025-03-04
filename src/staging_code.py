@@ -30,6 +30,7 @@ combined_json_df = pd.concat(json_dataframes, ignore_index=True) if json_datafra
 
 # Merge
 staging_df = pd.merge(combined_csv_df, combined_json_df, how="outer") if not combined_csv_df.empty else combined_json_df
+staging_df.fillna("N/A", inplace=True)
 
 # Save to staging folder
 staging_df.to_csv("staging/staging_table.csv", index=False)
