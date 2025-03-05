@@ -63,7 +63,13 @@ This project is a **data pipeline** for processing taxi trip data, involving **e
 1. Show top rows of data
 2. Show dataset summary
 3. Find maximum trip duration
-4. Find minimum trip distance
+4. Find maximum trip distance
 5. Count rows and columns
-6. Exit
-Enter your choice (1-6):
+6. Find average trip duration
+7. Find average trip distance
+8. Find most used vendor
+9. Find most used payment type
+10. Show time period of data
+11. Find most expensive trip
+12. Exit
+Enter your choice (1-12):

@@ -26,7 +26,13 @@ def display_menu():
     print("3. Find maximum trip duration")
     print("4. Find maximum trip distance")
     print("5. Count rows and columns")
-    print("6. Exit")
+    print("6. Find average trip duration")
+    print("7. Find average trip distance")
+    print("8. Find most used vendor")
+    print("9. Find most used payment type")
+    print("10. Show time period of data")
+    print("11. Find most expensive trip")
+    print("12. Exit")
 def main():
     df = load_data()
     if df is None:
@@ -34,7 +40,7 @@ def main():
     
     while True:
         display_menu()
-        choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-12): ")
         
         if choice == "1":
             print(df.head())
@@ -49,10 +55,30 @@ def main():
         elif choice == "5":
             print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
         elif choice == "6":
+            avg_duration = df["trip_duration"].mean()
+            print(f"Average trip duration: {avg_duration:.2f} seconds")
+        elif choice == "7":
+            avg_distance = df["trip_distance_km"].mean()
+            print(f"Average trip distance: {avg_distance:.2f} km")
+        elif choice == "8":
+            most_vendor = df["vendor_id"].mode()[0]
+            print(f"Most used vendor: {most_vendor}")
+        elif choice == "9":
+            most_payment_type = df["payment_type"].mode()[0]
+            print(f"Most used payment type: {most_payment_type}")
+        elif choice == "10":
+            start_date = df["lpep_pickup_datetime"].min()
+            end_date = df["lpep_dropoff_datetime"].max()
+            print(f"Data covers the period from {start_date} to {end_date}")
+        elif choice == "11":
+            most_expensive_trip = df["fare_amount"].max()
+            print(f"Most expensive trip cost: ${most_expensive_trip:.2f}")
+        elif choice == "12":
             print("Exiting the program.")
             break
         else:
-            print("Invalid choice, please enter a number between 1-6.")
+            print("Invalid choice, please enter a number between 1-12.")
+
 
 if __name__ == "__main__":
     main()
